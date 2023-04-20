@@ -50,7 +50,7 @@ class Subscribe(View):
             login(request, user)
             send_mail(
                 "Daily video", # subject
-                time +":\n Daily Subscription:\n"+ youtube_links[rand], # body
+                time +":\n Daily Video Subscription:\n"+ youtube_links[rand], # body
                 'xentime6@gmail.com', # sender
                 [user.email] # receiver(CC:)
             )
